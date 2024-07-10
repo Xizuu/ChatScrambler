@@ -1,0 +1,4 @@
+name: ChatScrambler
+version: '${project.version}'
+main: com.velloistdev.chatscrambler.Main
+api-version: '1.20'

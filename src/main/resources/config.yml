@@ -1,0 +1,48 @@
+# Configuration file for ChatScrambler
+
+# List of words to be used in the word scramble game
+words:
+  - apel
+  - pisang
+  - cherry
+  - anggur
+  - kiwi
+  - lemon
+  - mangga
+  - jeruk
+  - papaya
+  - raspberry
+  - stroberi
+  - tangerine
+  - vanilla
+  - semangka
+  - creeper
+  - sapi
+  - kelinci
+  - kuda
+  - meja
+  - minecraft
+  - llama
+  - lampu
+  - merah
+  - kuning
+  - hijau
+  - jingga
+  - langit
+  - matahari
+  - bulan
+  - bintang
+  - indonesia
+  - lemari
+  - pintu
+  - kudanil
+
+# Minimum and maximum prize amount in the local currency (Rp.)
+min_prize: 1000
+max_prize: 30000
+
+# Time limit for guessing the word in seconds
+guess_time_limit: 20
+
+# Interval for the word scramble task in seconds
+word_scramble_interval: 1200  # 20 minutes

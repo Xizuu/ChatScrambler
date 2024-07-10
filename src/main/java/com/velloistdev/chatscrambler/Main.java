@@ -120,9 +120,10 @@ public class Main extends JavaPlugin implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
         Player player = event.getPlayer();
-        String message = event.getMessage();
+        String message = event.getMessage().toLowerCase();
+        String lowerCaseWord = word != null ? word.toLowerCase() : null;
 
-        if (price != 0 && message.equalsIgnoreCase(word)) {
+        if (price != 0 && message.equalsIgnoreCase(lowerCaseWord)) {
             event.setCancelled(true);
             econ.depositPlayer(player, price);
             for (Player p : Bukkit.getOnlinePlayers()) {

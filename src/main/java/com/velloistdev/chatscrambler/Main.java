@@ -120,7 +120,14 @@ public class Main extends JavaPlugin implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
         Player player = event.getPlayer();
-        String message = event.getMessage().toLowerCase();
+        String message = event.getMessage().trim();
+
+        if (message.endsWith(".")) {
+            message = message.substring(0, message.length() - 1);
+        }
+
+        message = message.toLowerCase();
+
         String lowerCaseWord = word != null ? word.toLowerCase() : null;
 
         if (price != 0 && message.equalsIgnoreCase(lowerCaseWord)) {
